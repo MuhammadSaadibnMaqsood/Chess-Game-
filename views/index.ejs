@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chess Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <body>
-
-    <div class="bg-zinc-900 h-[100vh] flex items-center justify-center">
-      <div class="chessBoard bg-red-700 w-76 h-76">
-
-      </div>
+  <body class="bg-zinc-900 flex items-center justify-center h-screen">
+    <div
+      class="chessBoard grid grid-cols-8 grid-rows-8 w-[32rem] h-[32rem] border-8 border-yellow-600 shadow-2xl rounded-lg overflow-hidden"
+    >
     </div>
 
     <script
