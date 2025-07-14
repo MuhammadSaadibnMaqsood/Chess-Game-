@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chess Board</title>
+    <title>Chess Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-zinc-900 flex items-center justify-center h-screen">
-    <div
-      class="chessBoard grid grid-cols-8 grid-rows-8 w-[32rem] h-[32rem] border-8 border-yellow-600 shadow-2xl rounded-lg overflow-hidden"
-    >
+  <body class="bg-gradient-to-br from-zinc-800 to-zinc-900 text-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-zinc-800 rounded-xl shadow-2xl border-4 border-yellow-600 p-6 max-w-[36rem] w-full">
+      <h1 class="text-4xl font-bold text-center text-yellow-400 mb-2">♟️ Chess Game</h1>
+      <p class="text-center text-zinc-300 mb-6">Play as White or Black. Drag pieces to move!</p>
+
+      <div
+        class="chessBoard grid grid-cols-8 grid-rows-8 w-[32rem] h-[32rem] border-8 border-yellow-600 shadow-inner rounded-lg overflow-hidden mx-auto"
+      >
+      </div>
     </div>
 
     <script
